@@ -1,0 +1,447 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "Evolution&ASS1",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"filter_scopes\": {\"121\": {\"__time_range\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}}, \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{\\\"121\\\": {\\\"__time_range\\\": \\\"Last 20 days\\\"}}\", \"color_scheme\": \"googleCategory10c\", \"label_colors\": {\"EVOLUTION\": \"#3366cc\", \"Evolution\": \"#3366cc\", \"ASS\": \"#dc3912\"}, \"remote_id\": 11}",
+                "position_json": "{\"CHART-BEAlLiWU32\":{\"children\":[],\"id\":\"CHART-BEAlLiWU32\",\"meta\":{\"chartId\":121,\"height\":58,\"sliceName\":\"FilterPie\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-CzV8mSzGk1\"],\"type\":\"CHART\"},\"CHART-lh-p3nAfQS\":{\"children\":[],\"id\":\"CHART-lh-p3nAfQS\",\"meta\":{\"chartId\":122,\"height\":66,\"sliceName\":\"Line Chart\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-9t_5iWF9Q\"],\"type\":\"CHART\"},\"CHART-tuwCm-_b8h\":{\"children\":[],\"id\":\"CHART-tuwCm-_b8h\",\"meta\":{\"chartId\":120,\"height\":58,\"sliceName\":\"Pie Chart\",\"width\":8},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-CzV8mSzGk1\"],\"type\":\"CHART\"},\"COLUMN-S0aK2Aljir\":{\"children\":[\"MARKDOWN-ZpuzW5DVdG\"],\"id\":\"COLUMN-S0aK2Aljir\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-xqJqc3-uz\"],\"type\":\"COLUMN\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"DIVIDER-7YRS9I_8ZM\":{\"children\":[],\"id\":\"DIVIDER-7YRS9I_8ZM\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"DIVIDER\"},\"GRID_ID\":{\"children\":[\"ROW-xqJqc3-uz\",\"ROW-CzV8mSzGk1\",\"DIVIDER-7YRS9I_8ZM\",\"ROW-9t_5iWF9Q\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Evolution&ASS1\"},\"type\":\"HEADER\"},\"MARKDOWN-ZpuzW5DVdG\":{\"children\":[],\"id\":\"MARKDOWN-ZpuzW5DVdG\",\"meta\":{\"code\":\"Click here to go to Dashboard\\n[Evolution&ASS(Branch-wise)](http://localhost:8088/superset/dashboard/12/)\",\"height\":9,\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-xqJqc3-uz\",\"COLUMN-S0aK2Aljir\"],\"type\":\"MARKDOWN\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-9t_5iWF9Q\":{\"children\":[\"CHART-lh-p3nAfQS\"],\"id\":\"ROW-9t_5iWF9Q\",\"meta\":{\"0\":\"ROOT_ID\",\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-CzV8mSzGk1\":{\"children\":[\"CHART-tuwCm-_b8h\",\"CHART-BEAlLiWU32\"],\"id\":\"ROW-CzV8mSzGk1\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-xqJqc3-uz\":{\"children\":[\"COLUMN-S0aK2Aljir\"],\"id\":\"ROW-xqJqc3-uz\",\"meta\":{\"0\":\"ROOT_ID\",\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "EvolutionData",
+                            "datasource_type": "table",
+                            "id": 120,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"googleCategory10c\", \"datasource\": \"18__table\", \"donut\": false, \"granularity_sqla\": \"Date\", \"groupby\": [\"System\"], \"label_colors\": {\"ASS\": \"#dc3912\", \"EVOLUTION\": \"#3366cc\", \"Evolution\": \"#3366cc\"}, \"labels_outside\": false, \"metric\": \"count\", \"number_format\": \"SMART_NUMBER\", \"pie_label_type\": \"key_percent\", \"row_limit\": 10000, \"show_labels\": true, \"show_legend\": true, \"slice_id\": 120, \"time_range\": \"Last 20 days\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"121\\\": {\\\"__time_range\\\": \\\"Last 20 days\\\"}}\"}, \"viz_type\": \"pie\", \"remote_id\": 120, \"datasource_name\": \"EvolutionData\", \"schema\": null, \"database_name\": \"Loans\"}",
+                            "slice_name": "Pie Chart",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "Loan_tb",
+                            "datasource_type": "table",
+                            "id": 121,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"16__table\", \"date_filter\": true, \"filter_configs\": [], \"granularity_sqla\": \"Date\", \"instant_filtering\": false, \"show_druid_time_granularity\": false, \"show_druid_time_origin\": false, \"show_sqla_time_column\": false, \"show_sqla_time_granularity\": false, \"time_range\": \"Last week\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 121, \"datasource_name\": \"Loan_tb\", \"schema\": null, \"database_name\": \"Loan_db\"}",
+                            "slice_name": "FilterPie",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "EvolutionData",
+                            "datasource_type": "table",
+                            "id": 122,
+                            "params": "{\"adhoc_filters\": [], \"annotation_layers\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"googleCategory10c\", \"comparison_type\": \"values\", \"contribution\": false, \"datasource\": \"18__table\", \"granularity_sqla\": \"CreateDate\", \"groupby\": [\"System\"], \"label_colors\": {\"ASS\": \"#dc3912\", \"EVOLUTION\": \"#3366cc\", \"Evolution\": \"#3366cc\"}, \"left_margin\": \"auto\", \"line_interpolation\": \"basis\", \"metrics\": [\"count\"], \"order_desc\": true, \"resample_method\": null, \"resample_rule\": null, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"send_time_range\": false, \"show_brush\": \"auto\", \"show_legend\": true, \"show_markers\": false, \"slice_id\": 122, \"time_grain_sqla\": \"P1D\", \"time_range\": \"Last quarter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": null, \"url_params\": {\"preselect_filters\": \"{\\\"121\\\": {\\\"__time_range\\\": \\\"Last 20 days\\\"}}\"}, \"viz_type\": \"line\", \"x_axis_format\": \"smart_date\", \"x_axis_label\": \"Days\", \"x_axis_showminmax\": false, \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"Loan Count\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"remote_id\": 122, \"datasource_name\": \"EvolutionData\", \"schema\": null, \"database_name\": \"Loans\"}",
+                            "slice_name": "Line Chart",
+                            "viz_type": "line"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "column_name": "Id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-21T21:20:14"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 466,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "column_name": "Loan_master",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-21T21:20:14"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 467,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "VARCHAR",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "column_name": "Loan_child_master",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-21T21:20:14"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 468,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "VARCHAR",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "column_name": "Date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-21T21:20:14"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 469,
+                            "is_active": null,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "DATE",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "column_name": "branch",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 470,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "VARCHAR(20)",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 4,
+                "default_endpoint": null,
+                "description": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "Date",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-28T15:17:15"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-21T21:20:14"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "id": 24,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 16,
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 16, \"database_name\": \"Loan_db\"}",
+                "schema": null,
+                "sql": null,
+                "table_name": "Loan_tb",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "System",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 479,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "TEXT",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "AccountId",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 480,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "BIGINT",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "BranchName",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 481,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "TEXT",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "BranchId",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 482,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "BIGINT",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "DisbursementModeId",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 483,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "BIGINT",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "DebitOrderModeId",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 484,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "BIGINT",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "CreateDate",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 485,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "column_name": "CreatedBy",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 486,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "BIGINT",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 5,
+                "default_endpoint": null,
+                "description": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "CreateDate",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-07-31T10:53:09"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "id": 26,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 18,
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 18, \"database_name\": \"Loans\"}",
+                "schema": null,
+                "sql": null,
+                "table_name": "EvolutionData",
+                "template_params": null
+            }
+        }
+    ]
+}
